@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="https://s10.aconvert.com/convert/p3r68-cdx67/au5jm-z750c-001.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Hareeswar | portfolio</title>
+<style>
+.body{
+	background-color:#ecf0f3;
+	margin:0px;
+	height:1400px;
+}
+.body::-webkit-scrollbar{
+	display:none;
+}
+/*______navbar start_______*/
+.nav{
+	border:1px solid black;
+	border-radius:20px;
+	height:30px;
+	position:fixed;
+	top:3px;
+	background-color:rgba(255 255 255/80%);
+	width:99%;
+	z-index:1;
+	left:5px;
+	backdrop-filter:blur(50px);
+}
+.list a{
+	color: purple;
+	text-decoration: none;
+	font-size: 16px;
+	padding:5px 10px 5px 10px;
+	border-radius:15px 15px 15px 15px;
+	border-left:0.5px solid black;
+	float: right;
+	transition:0s;
+	height:20px;
+	display:block;
+}
+.list a:hover{
+	box-shadow:inset 0px -5px 0px purple;
+	background-color:#ecf0f0;
+	position:relative;
+	top:-2px;
+	border-top:1px solid black;
+	color:rgb(0, 0, 0);
+}
+.hamburger input{
+	background-color:red;
+	float:left;
+	width:100px;
+	position:absolute;
+	left:80%;
+	top:5px;
+	display:none;
+}
+.logo{
+	position:fixed;
+	height:30px;
+	background-color:#fff;
+	width:17%;
+	border-radius:15px 0px 0px 15px;
+	text-align:center;
+}
+.logo h2{
+	position:fixed;
+	top:-19px;
+	left:16px;
+	background-color:rgba(255 255 255/80%);
+	backdrop-filter:blur(50%);
+}
+/*______navbar ends_______*/
+/*___main intro starts____*/
+
+.intro{
+	background-color:#ecf0f3;
+	width:90%;
+	height:550px;
+	position:relative;
+	top:50px;
+	left:5%;	
+	border-radius:20px;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
+.hi{
+	animation-name:shake;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	position:absolute;
+	top:-5px;
+}
+@keyframes shake{
+	0% {tranform:rotate(0deg);}
+	25% {tranform:rotate(40deg);}
+	50% {transform:rotate(-40deg);}
+	100% {tranform:rotate(0deg);}
+}
+.intro-left{
+	background-color:#ecf0f3;
+	width:40%;
+	height:100%;
+	float:left;
+	border-radius:20px 20px;
+}
+.intro-left h1{
+	position:relative;
+	top:200px;
+	left:100px;
+	font-size:150%;
+	transition:1s;
+
+}
+.intro-right{
+	background-color:PURPLE;
+	width:60%;
+	height:100%;
+	float:left;
+	border-radius:0px 20px 20px 0px;
+}
+/*_______intro_ends_____*/
+/*_______Experience_starts_____*/
+.Experience{
+	background-color:#ecf0f3;
+	width:90%;
+	height:550px;
+	position:relative;
+	left:5%;
+	top:250px;
+	border-radius:20px;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
+.Experience .Experience-left{
+	position: absolute; 
+	top:-20px;
+	float:right;
+}
+.Experience .Experience-right{
+	position: absolute; 
+	background-color:#ecf0f3;
+	width:55%;
+	height:550px;
+	left:45%;
+	border-radius: 0px 20px 20px 0px;
+}
+.Experience-top{
+	width:90%;
+	height:550px;
+	position:relative;
+	left:5%;
+	top:-300px;
+	border-radius:20px;
+}
+.graphs-holder{
+	background-color:#ecf0f3;
+	width:600px;
+	height:460px;
+	box-shadow:13px 13px 20px inset #cbced1 ,-13px -13px 20px inset #fff;
+	border-radius: 10px;
+	position:relative;
+	left:10px;
+	top:-20px;
+}
+/*------------------logo's start--------------*/
+.python-logo{
+	position:relative;
+	top:40px;
+	left:35px;
+	width: 80px;
+	height: 80px;
+}
+.html-logo{
+	position:absolute;
+	top:280px;
+	left:79px;
+	width: 80px;
+	height: 80px;
+}
+.css-logo{
+	position:absolute;
+	top: 120px;
+	left:252px;
+	width: 80px;
+	height: 80px;
+}
+.js-logo{
+	position:absolute;
+	top: 358px;
+	left:296px;
+	width: 80px;
+	height: 80px;
+}
+/*--------------------logo's ends---------------*/
+.python-logo img{
+	width: 80px;
+	height: 80px;
+}
+.html-logo img{
+	width: 70px;
+	height: 70px;
+}
+.css-logo img{
+	width: 70px;
+	height: 70px;
+}
+.js-logo img{
+	width: 70px;
+	height: 70px;
+}
+.python-logo:hover+.python-graph{
+	display:block;
+}
+.html-logo:hover+.html-graph{
+	display:block;
+}
+.css-logo:hover+.css-graph{
+	display:block;
+}
+.js-logo:hover+.js-graph{
+	display:block;
+}
+/*-------graphs starts--------------------*/
+.python-graph{
+	width: 55px;
+	height:300px;
+	position:relative;
+	top:10px;
+	left:700px;
+	background-color: #F8DE22;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+	display:none;
+	border-radius:20px;
+	animation-name:python-appear;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;
+}
+.html-graph{
+	width: 55px;
+	height:370px;
+	position:relative;
+	top:10px;
+	left:900px;
+	background-color:rgb(9, 142, 98);
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+	display:none;
+	border-radius:20px;
+	animation-name:html-appear;
+	animation-duration: 1s;
+	animation-timing-function:ease-in;
+	animation-iteration-count:1;
+}
+.css-graph{
+	width: 55px;
+	height:350px;
+	position:relative;
+	top:10px;
+	left:800px;
+	background-color:#c8ff00;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+	display:none;
+	border-radius:20px;
+	animation-name:css-appear;
+	animation-duration: 1s;
+	animation-timing-function:ease-in;
+	animation-iteration-count:1;
+}
+.js-graph{
+	width: 55px;
+	height:100px;
+	position:relative;
+	top:10px;
+	left:600px;
+	background-color:#ff0000;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+	display:none;
+	border-radius:20px;
+	animation:js-appear 1s;
+	animation-timing-function:ease-in;
+	animation-iteration-count:1;
+}
+/*----------graphs ends--------------------*/
+/*-------keyframes starts--------------------*/
+@keyframes python-appear{
+	0%{opacity:0; height:0px;}
+	25%{opacity:0.2; height:100px;}
+	50%{opacity:0.5; height:200px;}
+	75%{opacity:0.7; height:300px;}
+	100%{opacity:1; height:300px;}
+}
+@keyframes html-appear{
+	0%{opacity:0; height:0px;}
+	25%{opacity:0.2; height:100px;}
+	50%{opacity:0.5; height:200px;}
+	75%{opacity:0.7; height:300px;}
+	100%{opacity:1; height:370px;}
+}
+@keyframes css-appear{
+	0%{opacity:0; height:0px;}
+	25%{opacity:0.2; height:100px;}
+	50%{opacity:0.5; height:200px;}
+	75%{opacity:0.7; height:300px;}
+	100%{opacity:1; height:350px;}
+}
+@keyframes js-appear{
+	0%{opacity:0; height:0px;}
+	25%{opacity:0.2; height:25px;}
+	50%{opacity:0.5; height:50px;}
+	75%{opacity:0.7; height:70px;}
+	100%{opacity:1; height:100px;}
+}
+/*-----------keyframes ends-----------------------*/
+/*_______Experience_ends_____*/
+/*_______________________________________________________________________responsive_______________________________________________________________________*/
+
+@media (max-width:768px){
+	.list a {
+		color: purple;
+		text-decoration: none;
+		font-size: 16px;
+		padding:5px 10px 5px 10px;
+		border-radius:15px 15px 15px 15px;
+		border-left:0.5px solid black;
+		float: right;
+		transition:0s;
+		height:20px;
+		display:none;
+	}
+	.intro-left h1{
+		position:relative;
+		top:200px;
+		left:30px;
+		font-size:100%;
+	}
+	.hamburger input{
+		background-color:#fff;
+		width:100px;
+		height:10px;
+		position:absolute;
+		left:85%;
+		top:5px;
+		display:block;
+		cursor:pointer;
+		transition:1s;
+	}
+	.hamburger input:checked~.list{
+		display:block;
+	}
+}
+</style>
+</head>
+<body class="body">
+<div class="nav">
+	<div class="logo"><h2>Nagalapuram <k style="color:purple;">Hareeswar</k></h2></div>
+	<div class="hamburger">
+		<input type="checkbox">
+	</div>
+	<div class="list">
+		<a href="#">Contact Me</a>
+		<a href="#">About Me</a>
+		<a href="#">Portfolio</a>
+		<a href="#Experience">Experience</a>
+		<a href="#">Home</a>
+	</div>
+</div>
+<div class="intro" >
+	<div class="intro-left">
+		<h1>HI<span class="hi">&#128075;</span><br>MYSELF <BR><span style="color:purple;">NAGALAPURAM <br>HAREESWAR</span></h1>
+	</div>
+	<div class="intro-right">
+		<div class="3d-model" style="overflow:hidden;">
+			<iframe id="landing-model" title="A 3D model of a shoe" class="hero__iframe" width="100%" height="550px" src="https://sketchfab.com/models/99bfe75ebd734fa3832a63e02e2cacf7/embed?annotations_visible=0&amp;autospin=-0.1&amp;autostart=1&amp;camera=0&amp;double_click=0&amp;internal=1&amp;max_texture_size=1024&amp;orbit_constraint_pan=1&amp;orbit_constraint_zoom_in=40&amp;orbit_constraint_zoom_out=60&amp;preload=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_ar=1&amp;ui_ar_help=0&amp;ui_color=white&amp;ui_fadeout=0&amp;ui_fullscreen=1&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_theme=dark&amp;ui_vr=0&amp;ui_watermark=0" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+		</div>
+	</div>
+</div>
+<div class="Experience" id="Experience">
+	<div class="Experience-left">
+		<div>
+			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+		</div>
+		<div style="position:absolute; left:87px;">
+			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+		</div>
+		<div style="position:absolute; left:174px;">
+			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+		</div>
+		<div style="position:absolute; left:260px;">
+			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+		</div>
+		<div style="position:absolute; left:347px;">
+			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+		</div>
+	</div>
+	<div class="Experience-right">
+		<h1 style="position:relative; left:70px; width:550px;">Hover The Icons To Get The Graphs</h1>
+		<div class="graphs-holder"></div>
+	</div>
+</div>
+<div class="Experience-top">
+	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:24px; top:-12px; cursor: pointer;">&#x2b22;</span>
+	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:68px; top:223px; cursor: pointer;">&#x2b22;</span>
+	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:242px; top:66px; cursor: pointer;">&#x2b22;</span>
+	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:284px; top:302px; cursor: pointer;">&#x2b22;</span>
+	<div class="python-logo">
+		<img src="https://static.vecteezy.com/system/resources/previews/012/697/295/original/3d-python-programming-language-logo-free-png.png" alt="python-logo">
+	</div>
+	<div class="python-graph">
+		<h2 style="position:relative; top:-30px;">75%</h2>
+	</div>
+	<div class="html-logo">
+		<img src="https://i.ibb.co/RHz7gp2/vecteezy-stylized-3d-html-logo-design-12697299-717.png" alt="html-logo">
+	</div>
+	<div class="html-graph">
+		<h2 style="position:relative; top:-30px;">90%</h2>
+	</div>
+	<div class="css-logo">
+		<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/301/small_2x/3d-css-icon-design-free-png.png" alt="css-logo">
+	</div>
+	<div class="css-graph">
+		<h2 style="position:relative; top:-30px;">85%</h2>
+	</div>
+	<div class="js-logo">
+		<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png" alt="js-logo">
+	</div>
+	<div class="js-graph">
+		<h2 style="position:relative; top:-30px;">30%</h2>
+	</div>
+</div>
+
+</body>
+</html>
