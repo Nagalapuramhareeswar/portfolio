@@ -16,7 +16,7 @@ html{
 	display:none;
 }
 /*______navbar start_______*/
-.nav{
+.nav-bar{
 	border:1px solid black;
 	border-radius:20px;
 	height:30px;
@@ -345,6 +345,18 @@ html{
 /*_______________________________________________________________________responsive_______________________________________________________________________*/
 
 @media (max-width:768px){
+	.nav-bar{
+	border:1px solid black;
+	border-radius:20px;
+	height:30px;
+	position:fixed;
+	top:3px;
+	background-color:rgba(255 255 255/80%);
+	width:99%;
+	z-index:1;
+	left:5px;
+	backdrop-filter:blur(50px);
+}
 	.list a {
 		color: purple;
 		text-decoration: none;
@@ -397,15 +409,15 @@ html{
 </style>
 </head>
 <body class="body">
-<div class="nav">
-	<div class="logo"><h2>Nagalapuram <k style="color:purple;">Hareeswar</k></h2></div>
+<div class="nav-bar">
+	<div class="logo"><h2>Nagalapuram <span style="color:purple;">Hareeswar</span></h2></div>
 	<div class="hamburger">
 		<input type="checkbox">
 	</div>
 	<div class="list">
-		<a href="#"><i class="fa fa-phone"></i> Contact Me</a>
-		<a href="#"><i class="fa fa-id-card-o"></i> About Me</a>
-		<a href="#"><i class="fa fa-briefcase"></i> Portfolio</a>
+		<a href="#contactme"><i class="fa fa-phone"></i> Contact Me</a>
+		<a href="#aboutme"><i class="fa fa-id-card-o"></i> About Me</a>
+		<a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
 		<a href="#Experience"><i class="fa fa-code"></i> Experience</a>
 		<a href="#"><i class="fa fa-home"></i> Home</a>
 	</div>
@@ -523,6 +535,6 @@ html{
 
 </body>
 <script>
-	alert(" hi , welcome to my portfolio 😍😍 ");
+	alert("hi welcome to my portfolio 😍");
 </script>
 </html>
