@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" type="image/x-icon" href="https://s10.aconvert.com/convert/p3r68-cdx67/au5jm-z750c-001.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Hareeswar | portfolio</title>
 <style>
+html{
+	scroll-behavior: smooth;
+}
 .body{
 	background-color:#ecf0f3;
 	margin:0px;
@@ -226,58 +228,87 @@
 	position:relative;
 	top:10px;
 	left:700px;
-	background-color: #F8DE22;
+	background-color: #f9e54b;
 	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 	display:none;
 	border-radius:20px;
-	animation-name:python-appear;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	animation-iteration-count:1;
+	animation:python-appear 1s ease-in;
+}
+.python-years{
+	height: 350px;
+	width:55px;
+	position:relative;
+	left:100px; top:-50px;
+	background-color:#27f77a;
+	animation: python-appear 1s ease-in;
+	border-radius:20px;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 }
 .html-graph{
 	width: 55px;
 	height:370px;
 	position:relative;
 	top:10px;
-	left:900px;
-	background-color:rgb(9, 142, 98);
+	left:700px;
+	background-color:rgba(24, 172, 123, 0.854);
 	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 	display:none;
 	border-radius:20px;
-	animation-name:html-appear;
-	animation-duration: 1s;
-	animation-timing-function:ease-in;
-	animation-iteration-count:1;
+	animation:html-appear 1s ease-in;
+}
+.html-years{
+	height: 300px;
+	width:55px;
+	position:relative;
+	left:100px; top:-50px;
+	background-color:#e2fa0fec;
+	animation: python-appear 1s ease-in;
+	border-radius:20px;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 }
 .css-graph{
 	width: 55px;
 	height:350px;
 	position:relative;
 	top:10px;
-	left:800px;
+	left:700px;
 	background-color:#c8ff00;
 	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 	display:none;
 	border-radius:20px;
-	animation-name:css-appear;
-	animation-duration: 1s;
-	animation-timing-function:ease-in;
-	animation-iteration-count:1;
+	animation :css-appear 1s ease-in;
+}
+.css-years{
+	height: 300px;
+	width:55px;
+	position:relative;
+	left:100px; top:-50px;
+	background-color:#3869e4ec;
+	animation: python-appear 1s ease-in;
+	border-radius:20px;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 }
 .js-graph{
 	width: 55px;
 	height:100px;
 	position:relative;
 	top:10px;
-	left:600px;
+	left:700px;
 	background-color:#ff0000;
 	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 	display:none;
 	border-radius:20px;
-	animation:js-appear 1s;
-	animation-timing-function:ease-in;
-	animation-iteration-count:1;
+	animation:js-appear 1s ease-in;
+}
+.js-years{
+	height: 100px;
+	width:55px;
+	position:relative;
+	left:100px; top:-50px;
+	background-color:#3869e4ec;
+	animation: js-appear 1s ease-in;
+	border-radius:20px;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 }
 /*----------graphs ends--------------------*/
 /*-------keyframes starts--------------------*/
@@ -356,11 +387,11 @@
 		<input type="checkbox">
 	</div>
 	<div class="list">
-		<a href="#">Contact Me</a>
-		<a href="#">About Me</a>
-		<a href="#">Portfolio</a>
-		<a href="#Experience">Experience</a>
-		<a href="#">Home</a>
+		<a href="#"><i class="fa fa-phone"></i> Contact Me</a>
+		<a href="#"><i class="fa fa-id-card-o"></i> About Me</a>
+		<a href="#"><i class="fa fa-briefcase"></i> Portfolio</a>
+		<a href="#Experience"><i class="fa fa-code"></i> Experience</a>
+		<a href="#"><i class="fa fa-home"></i> Home</a>
 	</div>
 </div>
 <div class="intro" >
@@ -369,7 +400,7 @@
 	</div>
 	<div class="intro-right">
 		<div class="3d-model" style="overflow:hidden;">
-			<iframe id="landing-model" title="A 3D model of a shoe" class="hero__iframe" width="100%" height="550px" src="https://sketchfab.com/models/99bfe75ebd734fa3832a63e02e2cacf7/embed?annotations_visible=0&amp;autospin=-0.1&amp;autostart=1&amp;camera=0&amp;double_click=0&amp;internal=1&amp;max_texture_size=1024&amp;orbit_constraint_pan=1&amp;orbit_constraint_zoom_in=40&amp;orbit_constraint_zoom_out=60&amp;preload=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_ar=1&amp;ui_ar_help=0&amp;ui_color=white&amp;ui_fadeout=0&amp;ui_fullscreen=1&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_theme=dark&amp;ui_vr=0&amp;ui_watermark=0" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+			<iframe id="landing-model" title="A 3D model of a robot"  width="100%" height="550px" src="https://sketchfab.com/models/99bfe75ebd734fa3832a63e02e2cacf7/embed?annotations_visible=0&amp;autospin=-0.1&amp;autostart=1&amp;camera=0&amp;double_click=0&amp;internal=1&amp;max_texture_size=1024&amp;orbit_constraint_pan=1&amp;orbit_constraint_zoom_in=40&amp;orbit_constraint_zoom_out=60&amp;preload=1&amp;scrollwheel=0&amp;sound_enable=1&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_ar=0&amp;ui_ar_help=0&amp;ui_color=green&amp;ui_fadeout=0&amp;ui_fullscreen=1&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_theme=dark&amp;ui_vr=0&amp;ui_watermark=0" frameborder="0" ></iframe>
 		</div>
 	</div>
 </div>
@@ -417,8 +448,10 @@
 		</div>
 	</div>
 	<div class="Experience-right">
-		<h1 style="position:relative; left:70px; width:550px;">Hover The Icons To Get The Graphs</h1>
-		<div class="graphs-holder"></div>
+		<!-- <h1 style="position:relative; left:70px; width:550px;">Hover The Icons To Get The Graphs</h1> -->
+		<!-- <div class="graphs-holder"></div> -->
+		<!-- <hr style="position:relative; top:500px;">
+		<hr style="position:relative; top:250px; left:-300px; transform: rotate(90deg); width:500px;"> -->
 	</div>
 </div>
 <div class="Experience-top">
@@ -431,26 +464,49 @@
 	</div>
 	<div class="python-graph">
 		<h2 style="position:relative; top:-30px;">75%</h2>
+		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">KNOWLEDGE</h3>
+		<div class="python-years">
+			<h2 style="position: relative; top:-30px; left:15px;">2</h2>
+			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">YEARS</h3>
+		</div>
 	</div>
 	<div class="html-logo">
 		<img src="https://i.ibb.co/RHz7gp2/vecteezy-stylized-3d-html-logo-design-12697299-717.png" alt="html-logo">
 	</div>
 	<div class="html-graph">
 		<h2 style="position:relative; top:-30px;">90%</h2>
+		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">KNOWLEDGE</h3>
+		<div class="html-years">
+			<h2 style="position: relative; top:-30px; left:15px;">6</h2>
+			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">MONTHS</h3>
+		</div>
 	</div>
 	<div class="css-logo">
 		<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/301/small_2x/3d-css-icon-design-free-png.png" alt="css-logo">
 	</div>
 	<div class="css-graph">
 		<h2 style="position:relative; top:-30px;">85%</h2>
+		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">KNOWLEDGE</h3>
+		<div class="css-years">
+			<h2 style="position: relative; top:-30px; left:15px;">6</h2>
+			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">MONTHS</h3>
+		</div>
 	</div>
 	<div class="js-logo">
 		<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png" alt="js-logo">
 	</div>
 	<div class="js-graph">
 		<h2 style="position:relative; top:-30px;">30%</h2>
+		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">KNOWLEDGE</h3>
+		<div class="js-years">
+			<h2 style="position: relative; top:-30px; left:15px;">2</h2>
+			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">MONTHS</h3>
+		</div>
 	</div>
 </div>
 
 </body>
+<script>
+	console.log("hi ra jaffas what are you doing");
+</script>
 </html>
