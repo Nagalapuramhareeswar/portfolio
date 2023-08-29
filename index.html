@@ -7,12 +7,12 @@
 html{
 	scroll-behavior: smooth;
 }
-.body{
+.body-laptop{
 	background-color:#ecf0f3;
 	margin:0px;
-	height:1400px;
+	height:auto;
 }
-.body::-webkit-scrollbar{
+.body-laptop::-webkit-scrollbar{
 	display:none;
 }
 /*______navbar start_______*/
@@ -46,7 +46,7 @@ html{
 	position:relative;
 	top:-2px;
 	border-top:1px solid black;
-	color:rgb(0, 0, 0);
+	color:black;
 }
 .hamburger input{
 	background-color:red;
@@ -57,20 +57,12 @@ html{
 	top:5px;
 	display:none;
 }
-.logo{
-	position:fixed;
-	height:30px;
-	background-color:#fff;
-	width:17%;
-	border-radius:15px 0px 0px 15px;
-	text-align:center;
-}
 .logo h2{
 	position:fixed;
 	top:-19px;
 	left:16px;
-	background-color:rgba(255 255 255/80%);
-	backdrop-filter:blur(50%);
+	width:270px;
+	border-radius:15px 0px 0px 15px;
 }
 /*______navbar ends_______*/
 /*___main intro starts____*/
@@ -104,6 +96,7 @@ html{
 	height:100%;
 	float:left;
 	border-radius:20px 20px;
+	position:relative;
 }
 .intro-left h1{
 	position:relative;
@@ -120,6 +113,50 @@ html{
 	float:left;
 	border-radius:0px 20px 20px 0px;
 }
+.name{
+	background: right/0% 100% no-repeat radial-gradient( rgba(225,225,0.5), rgba(225,225,0.5));
+	transition:background-size 400ms;
+}
+.name:hover{
+	background:left/ 100% 100% no-repeat linear-gradient( rgba(225,225,0.5), rgba(225,225,0.5));
+	color:black;
+	transition:1s;
+}
+.social{
+	position:absolute;
+	top: 70%;
+	left:20%;
+	font-size :25px;
+	background-color: #ecf0f3;
+}
+.social a{
+	margin:10px;
+	/* border:1px solid red; */
+	padding:10px 13px 10px 13px;
+	height:10px;
+	text-decoration: none;
+	color:purple;
+	border-radius:50%;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
+.social .github:hover{
+	background: #ecf0f3;
+	color:black;
+	transition: 0.5s;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
+.social .linkedin:hover{
+	background: rgb(0, 88, 165);
+	color:white;
+	transition: 0.5s;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
+.social .instagram:hover{
+	background:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	color:white;
+	transition: 0.5s;
+	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+}
 /*_______intro_ends_____*/
 /*_______Experience_starts_____*/
 .Experience{
@@ -128,7 +165,7 @@ html{
 	height:550px;
 	position:relative;
 	left:5%;
-	top:250px;
+	top:50px;
 	border-radius:20px;
 	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
 }
@@ -150,7 +187,7 @@ html{
 	height:550px;
 	position:relative;
 	left:5%;
-	top:-300px;
+	top:-500px;
 	border-radius:20px;
 }
 .graphs-holder{
@@ -342,9 +379,19 @@ html{
 }
 /*-----------keyframes ends-----------------------*/
 /*_______Experience_ends_____*/
+/*________________portfolio start's_____________________*/
+.portfolio{
+	width:90%;
+	height:100vh;
+	background-color:#ecf0f3;
+	position:relative;
+	top:100px;
+	margin:0 auto;
+}
+/*________________portfolio end's_____________________*/
 /*_______________________________________________________________________responsive_______________________________________________________________________*/
 
-@media (max-width:768px){
+/* @media (max-width:768px){
 	.nav-bar{
 	border:1px solid black;
 	border-radius:20px;
@@ -352,11 +399,11 @@ html{
 	position:fixed;
 	top:3px;
 	background-color:rgba(255 255 255/80%);
-	width:768px;
+	width:99%;
 	z-index:1;
 	left:5px;
 	backdrop-filter:blur(50px);
-}
+	}
 	.list a {
 		color: purple;
 		text-decoration: none;
@@ -405,136 +452,144 @@ html{
 		width: 50px;
 		height: 50px;
 	}
-}
+} */
 </style>
 </head>
-<body class="body">
-<div class="nav-bar">
-	<div class="logo"><h2>Nagalapuram <span style="color:purple;">Hareeswar</span></h2></div>
-	<div class="hamburger">
-		<input type="checkbox">
-	</div>
-	<div class="list">
-		<a href="#contactme"><i class="fa fa-phone"></i> Contact Me</a>
-		<a href="#aboutme"><i class="fa fa-id-card-o"></i> About Me</a>
-		<a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
-		<a href="#Experience"><i class="fa fa-code"></i> Experience</a>
-		<a href="#"><i class="fa fa-home"></i> Home</a>
-	</div>
-</div>
-<div class="intro" >
-	<div class="intro-left">
-		<h1>HI<span class="hi">&#128075;</span><br>MYSELF <BR><span style="color:purple;">NAGALAPURAM <br>HAREESWAR</span></h1>
-	</div>
-	<div class="intro-right">
-		<div class="3d-model" style="overflow:hidden;">
-			<iframe id="landing-model" title="A 3D model of a robot"  width="100%" height="550px" src="https://sketchfab.com/models/99bfe75ebd734fa3832a63e02e2cacf7/embed?annotations_visible=0&amp;autospin=-0.1&amp;autostart=1&amp;camera=0&amp;double_click=0&amp;internal=1&amp;max_texture_size=1024&amp;orbit_constraint_pan=1&amp;orbit_constraint_zoom_in=40&amp;orbit_constraint_zoom_out=60&amp;preload=1&amp;scrollwheel=0&amp;sound_enable=1&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_ar=0&amp;ui_ar_help=0&amp;ui_color=green&amp;ui_fadeout=0&amp;ui_fullscreen=1&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_theme=dark&amp;ui_vr=0&amp;ui_watermark=0" frameborder="0" ></iframe>
+<body class="body-laptop">
+	<div class="nav-bar">
+		<div class="logo"><h2>Nagalapuram <span style="color:purple;">Hareeswar</span></h2></div>
+		<div class="hamburger">
+			<input type="checkbox">
+		</div>
+		<div class="list">
+			<a href="#contact"><i class="fa fa-phone"></i> Contact Me</a>
+			<a href="#aboutme"><i class="fa fa-id-card-o"></i> About Me</a>
+			<a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+			<a href="#Experience-1"><i class="fa fa-code"></i> Experience</a>
+			<a href="#"><i class="fa fa-home"></i> Home</a>
 		</div>
 	</div>
-</div>
-<div class="Experience" id="Experience">
-	<div class="Experience-left">
-		<div>
-			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+	<div class="intro" >
+		<div class="intro-left">
+			<h1>HI<span class="hi">&#128075;</span><br>MYSELF <BR><span class="name" style="color:purple;">NAGALAPURAM <br>HAREESWAR</span></h1>
+			<div class="social">
+				<a class="github" href="https://github.com/Nagalapuramhareeswar"><i class="fa fa-github"></i></a>
+				<a class="instagram" href="https://www.instagram.com/hareeswar_harry/"><i class="fa fa-instagram"></i></a>
+				<a class="linkedin" href="https://www.linkedin.com/in/hareeswar-nagalapuram-046494241/"><i class="fa fa-linkedin"></i></a>
+			</div>
 		</div>
-		<div style="position:absolute; left:87px;">
-			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
-		</div>
-		<div style="position:absolute; left:174px;">
-			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
-		</div>
-		<div style="position:absolute; left:260px;">
-			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
-		</div>
-		<div style="position:absolute; left:347px;">
-			<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
-			<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+		<div class="intro-right">
+			<div class="3d-model" style="overflow:hidden;">
+				<iframe id="landing-model" title="A 3D model of a robot"  width="100%" height="550px" src="https://sketchfab.com/models/99bfe75ebd734fa3832a63e02e2cacf7/embed?annotations_visible=0&amp;autospin=-0.1&amp;autostart=1&amp;camera=0&amp;double_click=0&amp;internal=1&amp;max_texture_size=1024&amp;orbit_constraint_pan=1&amp;orbit_constraint_zoom_in=40&amp;orbit_constraint_zoom_out=60&amp;preload=1&amp;scrollwheel=0&amp;sound_enable=1&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=1&amp;ui_ar=0&amp;ui_ar_help=1&amp;ui_color=green&amp;ui_fadeout=0&amp;ui_fullscreen=0&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_theme=dark&amp;ui_vr=0&amp;ui_watermark=0" frameborder="0" ></iframe>
+			</div>
 		</div>
 	</div>
-	<div class="Experience-right">
-		<!-- <h1 style="position:relative; left:70px; width:550px;">Hover The Icons To Get The Graphs</h1> -->
-		<!-- <div class="graphs-holder"></div> -->
-		<!-- <hr style="position:relative; top:500px;">
-		<hr style="position:relative; top:250px; left:-300px; transform: rotate(90deg); width:500px;"> -->
-	</div>
-</div>
-<div class="Experience-top">
-	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:24px; top:-12px; cursor: pointer;">&#x2b22;</span>
-	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:68px; top:223px; cursor: pointer;">&#x2b22;</span>
-	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:242px; top:66px; cursor: pointer;">&#x2b22;</span>
-	<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:284px; top:302px; cursor: pointer;">&#x2b22;</span>
-	<div class="python-logo">
-		<img src="https://static.vecteezy.com/system/resources/previews/012/697/295/original/3d-python-programming-language-logo-free-png.png" alt="python-logo">
-	</div>
-	<div class="python-graph">
-		<h2 style="position:relative; top:-30px;">75%</h2>
-		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">KNOWLEDGE</h3>
-		<div class="python-years">
-			<h2 style="position: relative; top:-30px; left:15px;">2</h2>
-			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">YEARS</h3>
+	<div id="Experience-1" style="background-color:#ecf0f3; height:650px; position:relative; top:100px;">
+		<div class="Experience" id="Experience">
+			<div class="Experience-left">
+				<div>
+					<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+				</div>
+				<div style="position:absolute; left:87px;">
+					<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+				</div>
+				<div style="position:absolute; left:174px;">
+					<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+				</div>
+				<div style="position:absolute; left:260px;">
+					<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+				</div>
+				<div style="position:absolute; left:347px;">
+					<span style="color: purple; font-size: 135px;position:absolute; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:78px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:156px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:235px; left:64px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:314px; left:20px;">&#x2b22;</span>
+					<span style="color: purple; font-size: 135px;position:absolute; top:394px; left:64px;">&#x2b22;</span>
+				</div>
+			</div>
+			<div class="Experience-right"></div>
+		</div>
+		<div class="Experience-top">
+			<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:24px; top:-12px; cursor: pointer;">&#x2b22;</span>
+			<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:68px; top:223px; cursor: pointer;">&#x2b22;</span>
+			<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:242px; top:66px; cursor: pointer;">&#x2b22;</span>
+			<span style="color: #ecf0f3; font-size: 125px;position:absolute; left:284px; top:302px; cursor: pointer;">&#x2b22;</span>
+			<div class="python-logo">
+				<img src="https://static.vecteezy.com/system/resources/previews/012/697/295/original/3d-python-programming-language-logo-free-png.png" alt="python-logo">
+			</div>
+			<div class="python-graph">
+				<h2 style="position:relative; top:-30px;">75%</h2>
+				<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">KNOWLEDGE</h3>
+				<div class="python-years">
+					<h2 style="position: relative; top:-30px; left:15px;">2</h2>
+					<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">YEARS</h3>
+				</div>
+			</div>
+			<div class="html-logo">
+				<img src="https://i.ibb.co/RHz7gp2/vecteezy-stylized-3d-html-logo-design-12697299-717.png" alt="html-logo">
+			</div>
+			<div class="html-graph">
+				<h2 style="position:relative; top:-30px;">90%</h2>
+				<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">KNOWLEDGE</h3>
+				<div class="html-years">
+					<h2 style="position: relative; top:-30px; left:15px;">6</h2>
+					<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">MONTHS</h3>
+				</div>
+			</div>
+			<div class="css-logo">
+				<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/301/small_2x/3d-css-icon-design-free-png.png" alt="css-logo">
+			</div>
+			<div class="css-graph">
+				<h2 style="position:relative; top:-30px;">85%</h2>
+				<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">KNOWLEDGE</h3>
+				<div class="css-years">
+					<h2 style="position: relative; top:-30px; left:15px;">6</h2>
+					<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">MONTHS</h3>
+				</div>
+			</div>
+			<div class="js-logo">
+				<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png" alt="js-logo">
+			</div>
+			<div class="js-graph">
+				<h2 style="position:relative; top:-30px;">30%</h2>
+				<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">KNOWLEDGE</h3>
+				<div class="js-years">
+					<h2 style="position: relative; top:-30px; left:15px;">2</h2>
+					<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">MONTHS</h3>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="html-logo">
-		<img src="https://i.ibb.co/RHz7gp2/vecteezy-stylized-3d-html-logo-design-12697299-717.png" alt="html-logo">
-	</div>
-	<div class="html-graph">
-		<h2 style="position:relative; top:-30px;">90%</h2>
-		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">KNOWLEDGE</h3>
-		<div class="html-years">
-			<h2 style="position: relative; top:-30px; left:15px;">6</h2>
-			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 1s;">MONTHS</h3>
-		</div>
-	</div>
-	<div class="css-logo">
-		<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/301/small_2x/3d-css-icon-design-free-png.png" alt="css-logo">
-	</div>
-	<div class="css-graph">
-		<h2 style="position:relative; top:-30px;">85%</h2>
-		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">KNOWLEDGE</h3>
-		<div class="css-years">
-			<h2 style="position: relative; top:-30px; left:15px;">6</h2>
-			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">MONTHS</h3>
-		</div>
-	</div>
-	<div class="js-logo">
-		<img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png" alt="js-logo">
-	</div>
-	<div class="js-graph">
-		<h2 style="position:relative; top:-30px;">30%</h2>
-		<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">KNOWLEDGE</h3>
-		<div class="js-years">
-			<h2 style="position: relative; top:-30px; left:15px;">2</h2>
-			<h3 style="position:relative; top:100px; transform:rotate(90deg); transition:linear 2s;">MONTHS</h3>
-		</div>
-	</div>
-</div>
 
+	<div class="portfolio" id="portfolio">
+		
+	</div>
+	<div class="portfolio" id="aboutme">
+		aboutme
+	</div>
+	<div class="portfolio" id="contact">
+		contact form
+	</div>
 </body>
-<script>
-	alert("hi welcome to my portfolio 😍");
-</script>
 </html>
