@@ -104,6 +104,7 @@ html{
 	width:60%;
 	height:100%;
 	float:left;
+	/* border-radius:0px 20px 20px 0px; */
 	border-radius: 25% 4% 3% 25% / 27% 4% 4% 64%;
 	overflow: hidden;
 }
@@ -125,13 +126,14 @@ html{
 }
 .social a{
 	margin:10px;
-	/* border:1px solid red; */
+	/* border:1px solid black; */
 	padding:10px 13px 10px 13px;
 	height:10px;
 	text-decoration: none;
 	color:purple;
 	border-radius:50%;
 	box-shadow:13px 13px 20px #cbced1,-13px -13px 20px #fff;
+	/* background-color: #fff; */
 }
 .social .github:hover{
 	background: #ecf0f3;
